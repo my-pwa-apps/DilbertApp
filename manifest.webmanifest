@@ -7,41 +7,54 @@
     "background_color": "#2a93a5",
     "theme_color": "#2a93a5",
     "categories": ["entertainment"],
-    "icons": [
-      {
-          "src": "./android-chrome-192x192.png",
-          "sizes": "192x192",
-          "type": "image/png"
-      },
-      {
-        "src": "./maskable_icon_x512.png",
-        "sizes": "512x512",
-        "type": "image/png",
-        "purpose":"maskable"
-    },
-    {
-      "src": "./android-chrome-256x256.png",
-      "sizes": "256x256",
-      "type": "image/png"      
+ "icons": [
+  {
+   "src": "./android-icon-36x36.png",
+   "sizes": "36x36",
+   "type": "image/png",
+   "density": "0.75"
   },
-    {
-          "src": "./android-chrome-512x512.png",
-          "sizes": "512x512",
-          "type": "image/png"
-    } 
-            
-  ],
-    "screenshots" : 
-    [
-    {
-      "src": "./screenshot1.webp",
-      "sizes": "1226x1290",
-      "type": "image/webp"
-    },
-    {
-      "src": "./screenshot2.webp",
-      "sizes": "1222x1778",
-      "type": "image/webp"
-    }
-  ]
+  {
+   "src": "./android-icon-48x48.png",
+   "sizes": "48x48",
+   "type": "image/png",
+   "density": "1.0"
+  },
+  {
+   "src": "./android-icon-72x72.png",
+   "sizes": "72x72",
+   "type": "image/png",
+   "density": "1.5"
+  },
+  {
+   "src": "./android-icon-96x96.png",
+   "sizes": "96x96",
+   "type": "image/png",
+   "density": "2.0"
+  },
+  {
+   "src": "./android-icon-144x144.png",
+   "sizes": "144x144",
+   "type": "image/png",
+   "density": "3.0"
+  },
+  {
+   "src": "./android-icon-192x192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "density": "4.0"
+  },
+  {
+   "src": "./splash-screen.jpg",
+   "sizes": "1024x1024",
+   "type": "image/jpeg",
+   "density": "5.05"
+  },
+  {
+   "src": "./maskable_icon.png",
+   "sizes": "1024x1024",
+   "type": "image/png",
+   "purpose": "any maskable"
+  }
+ ]
 }
