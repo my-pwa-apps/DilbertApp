@@ -8,7 +8,7 @@ function Share()
 {
   if (navigator.share) {
     navigator.share({
-      title: 'https://garfieldapp.tk',
+      title: 'https://dilbertapp.tk',
       url: pictureUrl
     });
   } 
