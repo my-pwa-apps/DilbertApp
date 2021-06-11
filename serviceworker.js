@@ -1,29 +1,20 @@
 
-const OFFLINE_VERSION = 2;
+const OFFLINE_VERSION = 3;
 const CACHE_NAME = 'offline';
 const OFFLINE_URL = 
 [
   "./index.html",
-  "./garlogo.webp",
+  "./dillogo.png",
   "./mail.webp",
   "./paypaldonate.webp",
   "./pwa-pass-3.svg",
   "./swiped-events.min.js",    
   "./app.js",
   "./main.css",
-  "./serviceworker.js",
-  "./garfield.webp",    
-  "./maskable_icon.png",
-  "./mstile-150x150.png",
-  "./favicon.ico",
+  "./serviceworker.js",    
   "./favicon-32x32.png",
-  "./favicon-16x16.png",
-  "./favicon-32x32.webp",
-  "./favicon-16x16.webp",
-  "./apple-touch-icon.png",
-  "./android-chrome-192x192.png",
-  "./android-chrome-192x192.png"
- ];
+  "./favicon-16x16.png"
+   ];
 
 self.addEventListener('install', (event) => {
   event.waitUntil((async () => {
