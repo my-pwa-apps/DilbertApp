@@ -2,12 +2,12 @@
 
 <html lang="en">
 
-<head>
+  <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="dilbert, dilbert.com, comic, comics, strip, strips, cartoon, cartoons, scott, adams, webapp, mobile, responsive, pwa, progressive, web, app, ios, android, windows, platform, multi, platforms, independent">
-    <meta name="description" content="Garfield Comics, Current, Next, Previous, Random, First, Specific Date, Swipe">
+    <meta name="description" content="Dilbert Comics, Current, Next, Previous, Random, First, Specific Date, Swipe">
     
     <title>Daily Dilbert Comics</title>
 
@@ -41,47 +41,41 @@
     <script src="./app.js"></script>
     <script src="./swiped-events.min.js"></script>
 
-</head>
+  </head>
 
-<body onload=onload()>
+  <body onload=onload()>
 
-  <h1 hidden>Daily Dilbert Comics</h1>
-  <div class="logo">
-    <img src="./croppeddilbertlogo.png" style="width: 100%; padding: -100" alt="Daily Dilbert Comics"/>
-  </div>
-
-  <div class="buttongrid">
-    <button class="button" id="Previous" onclick="PreviousClick()"><i class="fa fa-arrow-circle-left"></i>  Previous</button>
-    <button class="button" id="Random" onclick="RandomClick()">Random</button>
-    <button class="button" id="Next" onclick="NextClick()">Next  <i class="fa fa-arrow-circle-right"></i></button>
-    <button class="button" id="First"  onclick="FirstClick()">First</button>
-    <input id="DatePicker" oninput="DateChange()" type="date" min="1989-04-16">
-    <button class="button" id="Current" onclick="CurrentClick()">Today</button>
-  </div>  
-  <br><br>
-  <img id="comic" alt="Loading comic from https://dilbert.com..." style="width:100vw;  margin-left: -50vw; margin-right: -50vw; position: relative ;right: 50%;left:50%">
-
-  <br>
-  <br>
-
-  <div>
-  <i onclick="Share()" aria-hidden="true" class="fa fa-share-alt" style="font-size: 25px; right: 20px; position: absolute"></i>
-</div>
-
- <div class="legend"> 
-    <label>Next</label><label>=</label><label>&nbsp;swipe left&nbsp;</label><i class="fa fa-arrow-circle-left"></i>
-    <label>Previous&nbsp;</label><label>=</label><label>&nbsp;swipe right&nbsp;</label><i class="fa fa-arrow-circle-right"></i>
-    <label>Random</label><label>=</label><label>&nbsp;swipe down&nbsp;</label><i class="fa fa-arrow-circle-down"></i>
-    <label>Today</label><label>=</label><label>&nbsp;swipe up&nbsp;</label><i class="fa fa-arrow-circle-up"></i>
- </div>
- <br>
+    <h1 hidden>Daily Dilbert Comics</h1>
  
- <div class="info">
-  <a href = mailto:dilbertapp@outlook.com ><img src="./mail.webp" alt="email address"></a>
-  <a href = https://paypal.me/bartmeijer ><img src="./paypaldonate.webp" alt="donatepaypal"></a>
-  <a href = https://dilbertapp.tk ><img src="./pwa-pass-3.svg" alt="pwa"></a>
-</div>
+    <div class="logo">
+      <img src="./croppeddilbertlogo.png" style="width: 100%; padding: -100" alt="Daily Dilbert Comics"/>
+    </div>
 
-</body>
+    <div class="buttongrid">
+      <button class="button" id="Previous" onclick="PreviousClick()"><i class="fa fa-arrow-circle-left"></i>  Previous</button>
+      <button class="button" id="Random" onclick="RandomClick()">Random</button>
+      <button class="button" id="Next" onclick="NextClick()">Next  <i class="fa fa-arrow-circle-right"></i></button>
+      <button class="button" id="First"  onclick="FirstClick()">First</button>
+      <input id="DatePicker" oninput="DateChange()" type="date" min="1989-04-16">
+      <button class="button" id="Current" onclick="CurrentClick()">Today</button>
+    </div>  
+ 
+    <br>
+    <br>
+ 
+    <img id="comic" class="normal" onclick=Rotate() alt="Loading comic from https://dilbert.com..." >
+
+    <br>
+    <br>
+
+    <div>
+      <i onclick="Share()" aria-hidden="true" class="fa fa-share-alt" style="font-size: 25px; right: 20px; position: absolute"></i>
+    </div>
+      
+    <div class="info">
+      <a href = mailto:dilbertapp@outlook.com ><img src="./mail.webp" alt="email address"></a>
+    </div>
+
+  </body>
   
 </html>
