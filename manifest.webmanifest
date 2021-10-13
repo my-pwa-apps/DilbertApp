@@ -45,8 +45,8 @@
    "density": "4.0"
   },
   {
-   "src": "./dildogbert.png",
-   "sizes": "169x169",
+   "src": "./dildogbert_large.png",
+   "sizes": "512x512",
    "type": "image/png",
    "purpose": "any maskable"
   }
