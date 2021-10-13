@@ -154,7 +154,12 @@ function showComic()
   formattedDate = year+"-"+month+"-"+day;
   document.getElementById('DatePicker').value = formattedDate;
   siteUrl = "https://cors.bridged.cc/https://dilbert.com/strip/"+formattedDate;
-  fetch(siteUrl)
+  fetch(siteUrl, {
+    method: "GET",
+    headers: {
+      "x-cors-grida-api-key": "77a0175b-4435-49b0-ad18-52d2dea5a548"
+    }
+  })
      .then(function(response) 
      {
       response.text().then(function(text) 
