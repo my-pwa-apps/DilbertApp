@@ -45,14 +45,8 @@
    "density": "4.0"
   },
   {
-   "src": "./splash-screen.jpg",
-   "sizes": "1024x1024",
-   "type": "image/jpeg",
-   "density": "5.05"
-  },
-  {
-   "src": "./maskable_icon.png",
-   "sizes": "1024x1024",
+   "src": "./dildogbert.png",
+   "sizes": "169x169",
    "type": "image/png",
    "purpose": "any maskable"
   }
