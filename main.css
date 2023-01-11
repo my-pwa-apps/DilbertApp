@@ -45,17 +45,7 @@ main
     box-shadow: none;
 }
 
-input
-{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    box-sizing: border-box;
-    max-width: 100%;
-    font-size: 0.8pc;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    opacity: 0.5;
-    text-align: center;
-}
+
 
 .buttongrid
 {
